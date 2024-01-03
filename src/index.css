@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply font-poppins text-sm/relaxed sm:text-base/relaxed xl:text-lg/relaxed overflow-x-hidden scroll-smooth;
+  }
+
+  h1 {
+    @apply text-center text-3xl sm:text-4xl xl:text-5xl tracking-tight font-bold;
+  }
+
+  h3 {
+    @apply text-sm sm:text-base xl:text-lg tracking-wider uppercase font-semibold;
+  }
+}
+
+@layer utilities {
+  .max-container {
+    @apply max-w-screen-xl mx-auto px-6 md:px-14;
+  }
+
+  .padding-y-section {
+    @apply py-20 md:py-24;
+  }
+}
