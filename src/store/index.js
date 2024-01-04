@@ -5,6 +5,7 @@ import {
   addTodo,
   toggleComplete,
   toggleEditMode,
+  editTodoTask,
   deleteTodo,
   deleteAllTodos,
 } from './slices/todoSlice';
@@ -15,4 +16,4 @@ const store = configureStore({
   },
 });
 
-export {store, addTodo, toggleComplete, toggleEditMode, deleteTodo, deleteAllTodos};
+export {store, addTodo, toggleComplete, toggleEditMode, editTodoTask, deleteTodo, deleteAllTodos};

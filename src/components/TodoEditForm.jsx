@@ -1,15 +1,15 @@
 import {useState} from 'react';
 import {useDispatch} from 'react-redux';
-import {addTodo} from '../store';
+import {editTodoTask} from '../store';
 
-const TodoForm = () => {
-  const [term, setTerm] = useState('');
+const TodoEditForm = ({todo: {task, id}}) => {
+  const [term, setTerm] = useState(task);
   const dispatch = useDispatch();
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
     if (!term) return;
-    dispatch(addTodo(term));
+    dispatch(editTodoTask({id, term}));
     setTerm('');
   };
 
@@ -19,14 +19,13 @@ const TodoForm = () => {
         value={term}
         onChange={(e) => setTerm(e.target.value)}
         type='text'
-        placeholder='What is your task today?'
-        className='input input-bordered input-primary flex-1 w-full'
+        className='input input-bordered input-secondary flex-1 w-full'
       />
-      <button type='submit' className='btn btn-primary'>
-        Add
+      <button type='submit' className='btn btn-secondary'>
+        Edit
       </button>
     </form>
   );
 };
 
-export default TodoForm;
+export default TodoEditForm;
