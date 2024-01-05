@@ -17,13 +17,3 @@
     @apply text-sm sm:text-base xl:text-lg tracking-wider uppercase font-semibold;
   }
 }
-
-@layer utilities {
-  .max-container {
-    @apply max-w-screen-xl mx-auto px-6 md:px-14;
-  }
-
-  .padding-y-section {
-    @apply py-20 md:py-24;
-  }
-}
