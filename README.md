@@ -1,8 +1,21 @@
-# React + Vite
+# Todo - Redux RTK
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[https://todo-redux-apuddu.netlify.app](https://todo-redux-apuddu.netlify.app)
 
-Currently, two official plugins are available:
+## Description
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Basic Todo List web application. I build it to refresh my knowledge of Redux RTK.
+
+## Key Features
+
+- Add, Edit, Delete Tasks
+- User-Friendly Interface
+- Responsive Design
+
+## Built with
+
+- Vite
+- React JS
+- Redux Tool Kit
+- Tailwind
+- DaisyUI
